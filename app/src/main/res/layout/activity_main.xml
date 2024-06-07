@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <CheckBox
+                    android:id="@+id/checkboxKomputer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Komputer - 500zł"
+                    android:padding="16dp"
+                    android:tag="500"
+                    android:background="@drawable/checkbox_background"
+                    android:buttonTint="@color/colorAccent"
+                    android:textColor="#333333" />
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageKomputer"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:src="@drawable/komputer"-->
+<!--                    android:layout_marginStart="8dp"-->
+<!--                    android:contentDescription="Komputer Image" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <CheckBox
+                    android:id="@+id/checkboxKlawiatura"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Klawiatura - 100zł"
+                    android:padding="16dp"
+                    android:tag="100"
+                    android:background="@drawable/checkbox_background"
+                    android:buttonTint="@color/colorAccent"
+                    android:textColor="#333333" />
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageKlawiatura"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:src="@drawable/klawiatura"-->
+<!--                    android:layout_marginStart="8dp"-->
+<!--                    android:contentDescription="Klawiatura Image" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <CheckBox
+                    android:id="@+id/checkboxMyszka"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Myszka - 50zł"
+                    android:padding="16dp"
+                    android:tag="50"
+                    android:background="@drawable/checkbox_background"
+                    android:buttonTint="@color/colorAccent"
+                    android:textColor="#333333" />
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageMyszka"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:src="@drawable/myszka"-->
+<!--                    android:layout_marginStart="8dp"-->
+<!--                    android:contentDescription="Myszka Image" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <CheckBox
+                    android:id="@+id/checkboxAkcesorium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Akcesorium - 200zł"
+                    android:padding="16dp"
+                    android:tag="200"
+                    android:background="@drawable/checkbox_background"
+                    android:buttonTint="@color/colorAccent"
+                    android:textColor="#333333" />
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageAkcesorium"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:src="@drawable/mikrofon"-->
+<!--                    android:layout_marginStart="8dp"-->
+<!--                    android:contentDescription="Akcesorium Image" />-->
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextCena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cena"
+                android:inputType="numberDecimal"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/edittext_background"
+                android:focusable="false"
+                android:clickable="false" />
+
+            <EditText
+                android:id="@+id/tytulzamowienia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tytuł"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/edittext_background" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Adres e-mail"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/edittext_background" />
+
+            <Button
+                android:id="@+id/buttonZapisz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zapisz Zamówienie"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/button_background"
+                android:textColor="@android:color/white"
+                android:elevation="4dp" />
+
+            <Button
+                android:id="@+id/buttonSendEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wyślij E-mail"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_background"
+                android:textColor="@android:color/white"
+                android:onClick="sendEmail"
+                android:elevation="4dp" />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

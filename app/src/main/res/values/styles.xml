@@ -1,0 +1,9 @@
+<resources>
+    <style name="CustomListView" parent="Widget.AppCompat.ListView">
+        <item name="android:divider">?android:attr/dividerHorizontal</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:listSelector">?android:attr/selectableItemBackground</item>
+        <item name="android:background">#f0f0f0</item>
+        <item name="android:padding">8dp</item>
+    </style>
+</resources>
